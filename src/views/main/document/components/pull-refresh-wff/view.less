@@ -1,0 +1,60 @@
+/**
+ * 下拉刷新瀑布流 less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2022年9月6日16:37:43
+ */
+
+.page-pull-refresh-wff {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 32px;
+  bottom: 32px;
+  bottom: calc(env(safe-area-inset-bottom) + 32px);
+  overflow: hidden;
+  overflow-y: auto;
+  .wff-goods {
+    margin: 0 11px;
+  }
+  .wff-goods-item {
+    margin: 0 4px;
+    margin-bottom: 10px;
+    background: #FFF;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .goods-thumb-wrap {
+      height: 168px;
+    }
+    .goods-info-wrap {
+      margin: 10px;
+      text-align: left;
+      .goods-name {
+        line-height: 18px;
+        font-size: 13px;
+        color: #333;
+      }
+    }
+    .goods-label {
+      margin-bottom: 4px;
+      .goods-label-item {
+        display: inline-block;
+        margin: 4px;
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 4px;
+        padding: 0 6px;
+        line-height: 14px;
+        border: 1px solid #FF5A39;
+        font-size: 10px;
+        color: #FF5A39;
+      }
+    }
+    .goods-money {
+      font-size: 18px;
+      color: #FF5A39;
+      font-weight: bold;
+      line-height: 26px;
+    }
+  }
+}

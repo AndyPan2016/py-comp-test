@@ -1,0 +1,84 @@
+/**
+ * 基础公共样式
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2020年8月20日16:55:05
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "PingFang SC", "Apple LiSung Light", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  font-size: 12px;
+  color: #333;
+  background: #FFF;
+  touch-action: none;
+  height: 100%;
+  input {
+    outline: none;
+  }
+}
+
+*{
+  -webkit-tap-highlight-color: transparent;
+  // 限制微信设置字体大小改变页面字体大小
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+}
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.page-static-tips {
+  padding: 15px;
+  background: #F7F8F9;
+  font-size: 14px;
+  color: #BBB;
+  text-align: left;
+  line-height: 18px;
+}
+.btn-primary {
+  height: 44px;
+  font-size: 15px;
+  color: #FFF;
+  line-height: 44px;
+  font-weight: bold;
+  padding: 0;
+  background: #208FFF;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.btn-default {
+  height: 44px;
+  font-size: 15px;
+  color: #208FFF;
+  line-height: 44px;
+  font-weight: normal;
+  border-radius: 10px;
+  padding: 0;
+  background: #FFF;
+  border: 1.5px solid #208FFF;
+  outline: none;
+  text-decoration: none;
+}

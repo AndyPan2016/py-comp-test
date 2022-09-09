@@ -1,0 +1,19 @@
+/**
+ * 下拉刷新列表 less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2022年9月6日15:11:24
+ */
+
+.page-pull-refresh-dataset {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 32px;
+  bottom: 32px;
+  bottom: calc(env(safe-area-inset-bottom) + 32px);
+  overflow: hidden;
+  overflow-y: auto;
+  .data-list-item {
+    line-height: 50px;
+  }
+}
