@@ -107,6 +107,24 @@ export default {
                 { text: 'false' }
               ],
               [
+                { text: 'backOffClose' },
+                {
+                  text: '点击后退关闭',
+                  textModel: 'scroll',
+                  table: {
+                    head: LANG.avaHead,
+                    body: [
+                      [{ text: 'true' }, { text: '使用点击后退关闭', textModel: 'scroll' }],
+                      [{ text: 'false' }, { text: '不使用点击后退关闭', textModel: 'scroll' }]
+                    ]
+                  }
+                },
+                { text: 'Boolean' },
+                { text: '点击后退关闭', textModel: 'scroll' },
+                { text: 'false' },
+                { text: 'false' }
+              ],
+              [
                 { text: 'barsContent' },
                 { text: '文本内容' },
                 { text: 'String' },

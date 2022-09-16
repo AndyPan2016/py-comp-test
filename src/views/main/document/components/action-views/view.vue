@@ -18,6 +18,7 @@
     <comp-action-views
       :visible="viewVisible1"
       :clickMaskClose="true"
+      :backOffClose="true"
       @close="onClose1">
       <div class="action-view-test-cont">这是一个简单的动作视图组件的展示</div>
       <div class="action-view-test-cont">这是一个简单的动作视图组件的展示</div>
