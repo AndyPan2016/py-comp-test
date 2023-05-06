@@ -6,7 +6,7 @@
 
 <template>
   <div class="page-main-test" ref="j-main-test">
-    <comp-pull-refresh
+    <!-- <comp-pull-refresh
       @pullRefresh="refresh"
       @scrollDown="loadMore"
       ref="ref-pull-refresh">
@@ -21,24 +21,21 @@
         <div class="data-list-item"
           v-for="(item, idx) in dataList"
           :key="idx">
-          <!-- <comp-thumb
-            src="http://youcheyunoss.oss-cn-shenzhen.aliyuncs.com/pro/20220516/1220262906931048448.jpg"
-            width="80px"
-            height="80px"
-            lazyLoad="visible-area"
-            :scrollTarget="scrollTarget" /> -->
           <comp-thumb
             src="http://youcheyunoss.oss-cn-shenzhen.aliyuncs.com/pro/20220516/1220262906931048448.jpg"
             width="80px"
             height="80px" />
-          <!-- <comp-thumb
-            :src="null"
-            width="100px"
-            height="100px" /> -->
           {{idx}}.有数据了
         </div>
       </comp-dataset>
-    </comp-pull-refresh>
+    </comp-pull-refresh> -->
+    <div style="padding: 20px;">
+      <!-- <a href="javascript:;" @click="test">#视频号:熹谷文化</a> -->
+      <!-- <a href="weixin://sou/123">123</a>
+      <a href="weixin://contacts/profile/12345">12345</a> -->
+      <a href="weixin://#视频号:熹谷文化">weixin://dl/help</a>
+    </div>
+    <!-- <iframe class="article-iframe" src="https://mp.weixin.qq.com/s/vNnQME-k77AEHFFLk-Hf2Q"></iframe> -->
     <!-- <comp-loading />
     <comp-loading
       :iconRotate="false"
@@ -75,6 +72,10 @@ export default {
   },
   component: {},
   methods: {
+    test () {
+      // window.location.href = '#小程序:济橙优选'
+      window.open('#小程序:济橙优选')
+    },
     /**
      * 加载数据
      */
@@ -450,9 +451,9 @@ export default {
   },
   created () { },
   mounted () {
-    this.loadData()
-    let refPullRefresh = this.$refs['ref-pull-refresh']
-    this.scrollTarget = refPullRefresh.$el
+    // this.loadData()
+    // let refPullRefresh = this.$refs['ref-pull-refresh']
+    // this.scrollTarget = refPullRefresh.$el
   },
   destory () { }
 }
@@ -479,6 +480,10 @@ export default {
     line-height: 30px;
     text-align: left;
     padding: 0 10px;
+  }
+  .article-iframe {
+    width: 100%;
+    height: 80px;
   }
 }
 </style>

@@ -18,6 +18,22 @@ export default [
     name: 'layout-frame-wrok',
     component: () => import('@/views/layout/frame-work/view.vue')
   },
+  // 测试
+  {
+    path: '/test1',
+    name: 'test1',
+    component: () => import('@/views/test/test1.vue')
+  },
+  {
+    path: '/test2',
+    name: 'test2',
+    component: () => import('@/views/test/test2.vue')
+  },
+  {
+    path: '/test3',
+    name: 'test3',
+    component: () => import('@/views/test/test3.vue')
+  },
   // 未找到页面(404)
   { path: '*', component: () => import('@/views/main/404/view.vue') }
 ]
